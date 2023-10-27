@@ -1,0 +1,28 @@
+{
+  "name": "poc-test-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "ios": "cross-env APPIUM_OS=ios ts-node src/index.ts",
+    "android": "cross-env APPIUM_OS=android ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "AlexKrilov",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "@types/mocha": "^10.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "appium": "^2.2.1",
+    "mocha": "^10.2.0"
+  },
+  "dependencies": {
+    "appium-flutter-finder": "^0.2.0",
+    "webdriverio": "^8.20.4",
+    "appium-flutter-driver": "^2.2.0"
+  },
+  "description": "Template project to test Flutter apps with Appium"
+}
